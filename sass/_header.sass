@@ -1,0 +1,38 @@
+body
+    font-family: 'Raleway', sans-serif
+    
+    .header
+        width: 100%
+        min-height: 80vh
+        background-image: url(../img/laser.jpg)
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        text-align: center
+        color: white
+        +flex(column,center,center)
+
+        h1
+            font-size: 2em
+            text-transform: uppercase
+
+        h2
+            font-size: .7em
+            text-transform: uppercase
+
+        .btn-header
+            position: relative
+            +btn-heading(50px,none,1px solid white,1px solid white,0px,rgba(50,50,50,0.3)) 
+
+        .btn-header::after
+            +position(absolute,5px,10px,0,0)
+            content: ''
+            display: block
+            width: 10%
+            height: 2px
+            background-color: #d9af27
+            transition: top .2s, width .2s .1s
+
+        .btn-header:hover::after
+            top: 80%
+            width: 90%

@@ -1,0 +1,358 @@
+.navbar {
+  background-color: rgba(10, 10, 10, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: .navbar;
+  bottom: .navbar;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar .navbar-brand {
+  color: #d9af27;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.header {
+  width: 100%;
+  min-height: 80vh;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.header .btn-header {
+  position: relative;
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+.header .btn-header::after {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #d9af27;
+  -webkit-transition: top .2s, width .2s .1s;
+  transition: top .2s, width .2s .1s;
+}
+
+.header .btn-header:hover::after {
+  top: 80%;
+  width: 90%;
+}
+
+.offer h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.offer h2 span {
+  color: #d9af27;
+}
+
+.offer h3 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #d9af27;
+  border-radius: 0px;
+  background-color: none;
+  color: black;
+  height: 70px;
+  line-height: 70px;
+}
+
+.offer article p {
+  color: gray;
+  margin: 15vh 0 15vh 0;
+}
+
+.offer .card {
+  margin: 20px;
+}
+
+.offer .card .card-title {
+  background-color: white;
+  border-bottom: 1px solid #d9af27;
+  text-transform: uppercase;
+}
+
+.offer .card .card-body {
+  background-color: white;
+}
+
+.offer .card .card-body .card-text {
+  color: gray;
+}
+
+.offer .btn-offer {
+  position: relative;
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  margin-bottom: 50px;
+}
+
+.offer .btn-offer::after {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #d9af27;
+  -webkit-transition: top .2s, width .2s .1s;
+  transition: top .2s, width .2s .1s;
+}
+
+.offer .btn-offer:hover::after {
+  top: 80%;
+  width: 90%;
+}
+
+.about-us {
+  background-color: black;
+}
+
+.about-us h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.about-us h2 span {
+  color: #d9af27;
+}
+
+.about-us .about-wrapper {
+  margin: 15vh 0;
+}
+
+.about-us .about-wrapper article p {
+  color: #ddd;
+  margin: 5vh 5vh;
+}
+
+.about-us .btn-about {
+  position: relative;
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  margin-bottom: 50px;
+}
+
+.about-us .btn-about::after {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #d9af27;
+  -webkit-transition: top .2s, width .2s .1s;
+  transition: top .2s, width .2s .1s;
+}
+
+.about-us .btn-about:hover::after {
+  top: 80%;
+  width: 90%;
+}
+
+.machines h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.machines h2 span {
+  color: #d9af27;
+}
+
+.machines h3 {
+  margin-top: 50px;
+  border: none;
+  border-left: none;
+  border-bottom: 1px solid #d9af27;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.machines article p {
+  color: gray;
+  margin: 15vh 0 15vh 0;
+}
+
+.gallery h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.gallery h2 span {
+  color: #d9af27;
+}
+
+.prices h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.prices h2 span {
+  color: #d9af27;
+}
+
+.prices h3 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #d9af27;
+  border-radius: 0px;
+  background-color: none;
+  color: black;
+  height: 70px;
+  line-height: 70px;
+}
+
+.prices article p {
+  color: gray;
+  margin: 15vh 0 15vh 0;
+}
+
+.contact h2 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.contact h2 span {
+  color: #d9af27;
+}
+
+.contact h3 {
+  margin-top: 50px;
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #d9af27;
+  border-radius: 0px;
+  background-color: none;
+  color: black;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.contact .card {
+  margin: 20px;
+  width: 250px;
+}
+
+.contact .card i {
+  background-color: white;
+  margin-top: 10px;
+  color: #d9af27;
+  font-size: 2em;
+}
+
+.contact .card .card-title {
+  color: black;
+  text-align: center;
+  border-bottom: 1px solid #d9af27;
+  text-transform: uppercase;
+}
+
+.contact .card .card-body {
+  background-color: white;
+}
+
+.contact .card .card-body .card-text {
+  display: block;
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

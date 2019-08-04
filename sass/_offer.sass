@@ -1,0 +1,72 @@
+.offer
+
+    h2
+        +btn-heading(50px,none,1px solid white,1px solid white,0px,rgba(10,10,10,0.9))
+        color: white
+        height: 70px
+        line-height: 70px
+
+        span
+            color: $mustardColor
+        
+    h3
+        +btn-heading(50px,none,1px solid white,1px solid $mustardColor,0px,none)
+        +heading-text (black,70px,70px)
+
+    article
+        color: $grayColor
+        margin: 15vh 0 15vh 0
+
+        
+
+    .card
+        margin: 20px
+        min-height: 55%
+        box-shadow: #eee 1px 1px
+        background-color: white
+        +flex(column,center,center)
+        
+        .card-item
+            width: 100%
+            height: 100%
+            background-color: white
+            border: none
+
+        .card-title
+            +flex(column,center,center)
+            font-size: 1em
+            background-color: white
+            border-bottom: 1px solid $mustardColor
+            text-transform: uppercase
+            height: 70px
+            text-align: center
+            width: 100%
+            
+
+        .card-body
+            background-color: white
+            
+
+            .card-text
+                color: $grayColor
+                font-size: .9em
+
+    .btn-offer
+        position: relative
+        +btn-heading(50px,none,1px solid white,1px solid white,0px,rgba(10,10,10,0.9))
+        margin-bottom: 50px
+        padding: 15px
+        
+    .btn-offer::after
+        +position(absolute,5px,10px,0,0)
+        content: ''
+        display: block
+        width: 10%
+        height: 2px
+        background-color: #d9af27
+        transition: top .2s, width .2s .1s
+
+    .btn-offer:hover::after
+        top: 80%
+        width: 90%
+    
